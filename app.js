@@ -6,7 +6,7 @@ const date = require(__dirname + "/date.js");
 const mongoose=require("mongoose");
 const app = express();
 const _=require("lodash");
-const uri = "mongodb+srv://root:root@cluster0.xydbh.mongodb.net/todo?retryWrites=true&w=majority";
+const uri = "mongodb+srv://dbname:dbpassword@cluster0.xydbh.mongodb.net/todo?retryWrites=true&w=majority";
 try {
   mongoose.connect( uri, {useNewUrlParser: true, useUnifiedTopology: true}, () =>
   console.log("connected"));    
